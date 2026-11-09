@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive API Privacy & Security Disclosure — MS Sister App</title>
+    <meta name="description" content="Google Drive API Privacy & Compliance Disclosure for MS Sister (com.mukesh.mssister). Details on requested OAuth scopes, AES-256 local encryption, and Limited Use compliance.">
+    <link rel="icon" type="image/png" href="assets/mssister1.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/mssister1.png" alt="MS Sister Official App Icon" class="brand-icon">
+                <div class="brand-name">MS <span>Sister</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+            <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener" class="btn-primary">
+                <span>⚡ Get on Google Play</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Title Header -->
+    <div class="legal-header" style="background: linear-gradient(135deg, #1A73E8, #0D47A1);">
+        <div class="container">
+            <h1>Google Drive API Data Disclosure</h1>
+            <p>Transparency & Compliance Statement for Google OAuth Verification • Package: <code>com.mukesh.mssister</code></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="legal-content">
+
+            <div class="highlight-box" style="border-left-color: #4285F4; background: #F4F8FF;">
+                <b>Google OAuth Verification Summary:</b><br>
+                MS Sister (Package Name: <code>com.mukesh.mssister</code>) uses the Google Drive API strictly for user-requested backup and restore of encrypted menstrual health data. MS Sister maintains a <b>zero-server architecture</b> — all data is encrypted on-device prior to transmission and uploaded directly to the user's personal, private Google Drive App Data folder. Neither the app developer nor any third party ever accesses, reads, or stores user data.
+            </div>
+
+            <h2>1. Why MS Sister Requests Google Drive Access</h2>
+            <p>
+                Menstrual health history is deeply personal. Traditional health apps store sensitive user data on centralized servers, creating privacy risks. MS Sister solves this by allowing users to back up their data directly to their own personal Google Drive storage space.
+            </p>
+            <p>
+                Google Drive API permission is requested solely to:
+            </p>
+            <ul>
+                <li>Save an encrypted backup file of cycle records and daily symptom logs into the user's private Google Drive storage.</li>
+                <li>Restore encrypted cycle history when a user switches to a new Android phone.</li>
+            </ul>
+
+            <h2>2. Specific OAuth Scopes Requested</h2>
+            <p>
+                MS Sister requests the minimal restricted OAuth scope required to perform backup and restore operations:
+            </p>
+            <ul>
+                <li><b>Scope:</b> <code>https://www.googleapis.com/auth/drive.appdata</code> (or <code>drive.file</code>)</li>
+                <li><b>Purpose:</b> Accessing only the application-specific private data folder (Application Data folder) created by MS Sister in the user's Google Drive. The app <b>cannot read or access any other files or folders</b> in the user's Google Drive.</li>
+            </ul>
+
+            <h2>3. End-to-End Local Encryption Mechanism</h2>
+            <p>
+                Data security is maintained at every step of the sync process:
+            </p>
+            <ol style="margin-left: 20px; margin-bottom: 16px;">
+                <li><b>On-Device Payload Generation:</b> Cycle dates, period durations, flow levels, pain scores, symptoms, and remedies are compiled into a JSON structure.</li>
+                <li><b>Hardware Key AES-256-GCM Encryption:</b> The JSON payload is encrypted locally using Android KeyStore Master Keys (`AES/GCM/NoPadding`).</li>
+                <li><b>Direct Sync:</b> The resulting cipher text payload is transmitted directly over HTTPS to Google Drive servers. Unencrypted health data never touches network sockets.</li>
+                <li><b>Local Decryption:</b> Only the MS Sister app running on the user's device (with access to the device's KeyStore secret key) can decrypt and parse the payload.</li>
+            </ol>
+
+            <h2>4. Compliance with Google API Services User Data Policy</h2>
+            <div class="highlight-box" style="background: #E8F5E9; border-left-color: #2E7D32;">
+                <b>Official Limited Use Declaration:</b><br>
+                MS Sister's use and transfer to any other app of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener" style="color: #1B5E20; font-weight: bold;">Google API Services User Data Policy</a>, including the <b>Limited Use requirements</b>.
+            </div>
+
+            <h3>Limited Use Commitments:</h3>
+            <ul>
+                <li><b>No Third-Party Sharing:</b> We do not share, transfer, or sell Google Drive user data to any third-party advertisers, data brokers, or external entities.</li>
+                <li><b>No Advertising / Marketing Use:</b> Information retrieved from Google Drive APIs is never used for serving targeted ads, marketing campaigns, or re-targeting.</li>
+                <li><b>No Machine Learning / AI Training:</b> Data accessed from Google Drive is never used to train artificial intelligence, large language models (LLMs), or machine learning models.</li>
+                <li><b>No Human Inspection:</b> Human beings (including the app developer) do not read or inspect user backup files stored on Google Drive.</li>
+            </ul>
+
+            <h2>5. User Rights, Revocation & Data Deletion</h2>
+            <p>
+                Users possess complete control over their Google Drive backup files and authorization settings:
+            </p>
+            <ul>
+                <li><b>Deleting Backups from Drive:</b> Users can delete the encrypted MS Sister backup file at any time by navigating to <b>Google Drive &gt; Settings &gt; Manage Apps &gt; MS Sister &gt; Delete hidden app data</b>.</li>
+                <li><b>Revoking OAuth Permissions:</b> Users can revoke MS Sister's access to their Google account at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>.</li>
+                <li><b>Disabling Sync in App:</b> Disabling Google Drive Sync in MS Sister Settings immediately halts all cloud backup calls.</li>
+            </ul>
+
+            <h2>6. Developer & Verification Contact Information</h2>
+            <p>
+                This document is maintained for Google Cloud / OAuth Trust & Safety verification reviews. For any questions, contact:
+            </p>
+            <p>
+                <b>Developer / Publisher Name:</b> Mukesh<br>
+                <b>App Name:</b> MS Sister (Menstrual Health & Doctor Reports)<br>
+                <b>Android Package Name:</b> <code>com.mukesh.mssister</code><br>
+                <b>Official Support Email:</b> <a href="mailto:contact.dostified@gmail.com" style="color: var(--primary-rose); font-weight: bold;">contact.dostified@gmail.com</a><br>
+                <b>Google Play Store Link:</b> <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.mukesh.mssister</a>
+            </p>
+
+            <!-- Developed by Mukesh Social Media Button -->
+            <div class="dev-banner-btn" onclick="openSocialModal()" style="margin-top: 24px;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                    <img src="assets/mssister1.png" alt="Mukesh Logo" style="width: 44px; height: 44px; border-radius: 50%;">
+                    <div>
+                        <h4 style="font-size: 16px; margin-bottom: 2px;">Developed by Mukesh</h4>
+                        <p style="font-size: 12px; opacity: 0.85;">Tap to view developer social media links & channels</p>
+                    </div>
+                </div>
+                <span class="btn-primary" style="padding: 6px 14px; font-size: 12px;">🌐 Social Media</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                        <img src="assets/mssister1.png" alt="MS Sister Logo" class="brand-icon" style="width: 32px; height: 32px; border-radius: 8px;">
+                        <h3 style="margin-bottom: 0;">MS Sister</h3>
+                    </div>
+                    <p>Encrypted menstrual health tracking, doctor reports, and Google Drive cloud sync.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="google-drive-privacy.html">Google Drive Disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Download</h4>
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener">Play Store Download</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MS Sister (Mukesh). Package: com.mukesh.mssister • Contact: <a href="mailto:contact.dostified@gmail.com" style="color: var(--primary-rose-light);">contact.dostified@gmail.com</a></p>
+                <p style="margin-top: 6px;"><a href="javascript:void(0)" onclick="openSocialModal()" style="color: var(--primary-rose-light); text-decoration: underline;">🌐 View Developed by Mukesh Social Media Dialog</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Developed by Mukesh — Official Social Media Modal Dialog -->
+    <div id="social-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <img src="assets/dostified_logo.png" alt="Mukesh Saw Logo" class="dev-profile-pic">
+                <div class="modal-title-group">
+                    <h3>Mukesh Saw</h3>
+                    <span class="dev-tagline">Developed by Mukesh</span>
+                </div>
+                <button class="modal-close" onclick="closeSocialModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="social-links-grid" style="grid-template-columns: 1fr;">
+                    <a href="https://whatsapp.com/channel/0029Va8zuwILCoX7PJQRD71K" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/whatsapp.png" alt="WhatsApp Channel" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>WhatsApp Channel</strong>
+                            <small>Official Updates</small>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/telegram.png" alt="Telegram Channel" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Telegram Channel</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/instagram.png" alt="Instagram Profile" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Instagram Profile</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/facebook.png" alt="Facebook Page" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Facebook Page</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/twitter.png" alt="Twitter Profile" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Twitter Profile</strong>
+                            <small>@dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://youtube.com/@Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/youtube.png" alt="YouTube Channel" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>YouTube Channel</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top: 16px;">
+                <button class="btn-primary" onclick="closeSocialModal()" style="width: 100%; justify-content: center;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Dialog Script -->
+    <script>
+        function openSocialModal() {
+            document.getElementById('social-modal').classList.add('active');
+        }
+        function closeSocialModal() {
+            document.getElementById('social-modal').classList.remove('active');
+        }
+        document.getElementById('social-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSocialModal();
+            }
+        });
+    </script>
+
+</body>
+</html>

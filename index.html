@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Sister — Private Menstrual Health, Cycle Predictor & Doctor Reports</title>
+    <meta name="description" content="MS Sister is your private, end-to-end encrypted menstrual health companion. Track period cycles, predict ovulation, generate gynecological PDF reports, and sync directly to your private Google Drive.">
+    <link rel="icon" type="image/png" href="assets/mssister1.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/mssister1.png" alt="MS Sister Official App Icon" class="brand-icon">
+                <div class="brand-name">MS <span>Sister</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About App</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#google-drive-sync">Google Drive Sync</a></li>
+                <li><a href="#pricing">Plans</a></li>
+                <li><a href="#developer-account">Developer & Account</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+            <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener" class="btn-primary">
+                <span>⚡ Get on Google Play</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>🔒 100% Private & Zero-Server Architecture</span>
+                    </div>
+                    <h1 class="hero-title">Your Private, Intelligent <span>Menstrual Health</span> Sister</h1>
+                    <p class="hero-subtitle">
+                        Empowering women with accurate cycle predictions, daily symptom logs, gynecologist PDF report exports, hardware-backed AES-256 encryption, and private Google Drive cloud sync.
+                    </p>
+                    <div class="hero-buttons">
+                        <!-- Play Store Download Link generated using package name: com.mukesh.mssister -->
+                        <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener" class="btn-primary">
+                            <span>📲 Download App (Play Store)</span>
+                        </a>
+                        <a href="google-drive-privacy.html" class="btn-secondary">
+                            <span>☁️ Google Drive Privacy Info</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-mockup">
+                    <div class="hero-mockup-card">
+                        <div class="app-card-preview">
+                            <div class="app-card-header">
+                                <span class="phase-pill">🌸 Menstrual Phase</span>
+                                <small>Cycle Day 12</small>
+                            </div>
+                            <h3>Next Period Expected in 16 Days</h3>
+                            <p style="font-size: 13px; opacity: 0.85; margin-top: 8px;">
+                                "Shedding phase in progress. Warm herbal tea, gentle stretching, and extra sleep will keep you feeling protected."
+                            </p>
+                        </div>
+                        <div style="display: flex; gap: 10px; font-size: 13px; color: var(--text-muted); align-items: center;">
+                            <span>🔐 AES-256 Encrypted</span> •
+                            <span>☁️ Direct Google Drive Sync</span> •
+                            <span>📄 PDF Doctor Report</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Overview / About Section -->
+    <section id="about" class="features-section" style="background: white;">
+        <div class="container" id="features">
+            <div class="section-header">
+                <span class="section-tag">Empowering Women's Health</span>
+                <h2 class="section-title">Designed for Your Privacy, Security & Well-Being</h2>
+                <p class="section-description">
+                    MS Sister was created to solve the privacy concerns around menstrual tracking. Unlike conventional period apps that centralize sensitive health records on external servers, MS Sister puts you in total control.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">📅</div>
+                    <h3>Smart AI Cycle Predictor</h3>
+                    <p>Calculates average cycle lengths and period durations to accurately forecast Menstrual, Follicular, Ovulation, and Luteal phases, alerting you to irregularities.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">📝</div>
+                    <h3>Holistic Daily Logs</h3>
+                    <p>Track flow levels (Spotting to Heavy), pain intensity (0-10), pain locations (Lower Abdomen, Back, Thighs), moods, physical symptoms, and soothing remedies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">🩺</div>
+                    <h3>Gynecologist PDF Reports</h3>
+                    <p>Generate formal, confidential A4 PDF health reports summarizing cycle history, symptom frequencies, and doctor recommendations for clinical visits.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">🔒</div>
+                    <h3>Hardware Key Encryption</h3>
+                    <p>All cycle data is encrypted locally using Android KeyStore AES-256-GCM and EncryptedSharedPreferences. No unencrypted data is ever written to storage.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper" style="background: none; padding: 0;">
+                        <img src="assets/mssister1.png" alt="MS Sister Icon 1" style="width: 56px; height: 56px; border-radius: 14px;">
+                    </div>
+                    <h3>Stealth Mode & Custom Icons</h3>
+                    <p>Includes 3 official discreet app launcher icons and email masking to protect your privacy on your phone's home screen and settings.</p>
+                    <div class="icon-switcher-grid">
+                        <img src="assets/mssister1.png" alt="Icon 1" class="icon-thumb active" title="Default Icon (mssister1)">
+                        <img src="assets/mssister2.png" alt="Icon 2" class="icon-thumb" title="Alias Icon 2 (mssister2)">
+                        <img src="assets/mssister3.png" alt="Icon 3" class="icon-thumb" title="Alias Icon 3 (mssister3)">
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">☁️</div>
+                    <h3>Direct Google Drive Sync</h3>
+                    <p>Seamlessly back up and restore your encrypted data directly to your personal Google Drive storage. No third-party server ever touches your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Google Drive Integration & Privacy Section -->
+    <section id="google-drive-sync" class="drive-section">
+        <div class="container">
+            <div class="drive-box">
+                <div class="drive-header">
+                    <img src="assets/mssister1.png" alt="MS Sister App Icon" class="brand-icon" style="width: 56px; height: 56px; border-radius: 14px;">
+                    <div>
+                        <span class="section-tag">Google OAuth Verification & Data Disclosure</span>
+                        <h2 class="section-title" style="margin-bottom: 4px;">Google Drive Integration & Sync</h2>
+                        <p class="section-description">How MS Sister safely handles your Google Drive data with complete transparency.</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 16px; color: var(--text-main); margin-bottom: 20px;">
+                    MS Sister utilizes the official Google Drive API to provide a zero-knowledge cloud backup solution. We believe intimate health data should remain strictly between you and your personal devices. Here is how our sync process works:
+                </p>
+
+                <div class="drive-steps">
+                    <div class="drive-step-item">
+                        <div class="step-num">1</div>
+                        <h4 style="color: var(--deep-plum); margin-bottom: 8px;">On-Device Encryption</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">
+                            Before any backup leaves your phone, MS Sister packages your cycle records and logs into a single payload encrypted with hardware-backed <b>AES-256-GCM</b> encryption.
+                        </p>
+                    </div>
+
+                    <div class="drive-step-item">
+                        <div class="step-num">2</div>
+                        <h4 style="color: var(--deep-plum); margin-bottom: 8px;">Direct Drive Upload</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">
+                            The app connects directly from your phone to Google Drive servers via HTTPS. The encrypted payload is saved into your personal, restricted Google Drive App Data folder.
+                        </p>
+                    </div>
+
+                    <div class="drive-step-item">
+                        <div class="step-num">3</div>
+                        <h4 style="color: var(--deep-plum); margin-bottom: 8px;">Zero Intermediate Server</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">
+                            MS Sister operates <b>without any backend database or intermediate app server</b>. Neither the developer (Mukesh) nor any third party ever receives, transmits, or sees your data.
+                        </p>
+                    </div>
+
+                    <div class="drive-step-item">
+                        <div class="step-num">4</div>
+                        <h4 style="color: var(--deep-plum); margin-bottom: 8px;">Full User Control</h4>
+                        <p style="font-size: 14px; color: var(--text-muted);">
+                            You can enable, disable, or delete your Google Drive backup file at any time directly through Google Drive settings or by logging out within the app.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compliance-badge">
+                    <b>Official Google API Limited Use Disclosure:</b><br>
+                    MS Sister's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener" style="color: #1B5E20; text-decoration: underline;">Google API Services User Data Policy</a>, including the <b>Limited Use requirements</b>. We do not use Google Drive data for advertising, analytics, machine learning training, or third-party sharing.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Account & Developer Verification Info -->
+    <section id="developer-account" class="account-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Account & Verification Details</span>
+                <h2 class="section-title">App Package & Publisher Information</h2>
+                <p class="section-description">Details submitted for Google Play Store listing and Google OAuth verification.</p>
+            </div>
+
+            <div class="info-card">
+                <table class="info-table">
+                    <tr>
+                        <th>Application Name</th>
+                        <td>MS Sister (Menstrual Health & Doctor Reports)</td>
+                    </tr>
+                    <tr>
+                        <th>Android Package Name</th>
+                        <td><code>com.mukesh.mssister</code></td>
+                    </tr>
+                    <tr>
+                        <th>Developer / Publisher Name</th>
+                        <td>Mukesh (MS Sister Development Team)</td>
+                    </tr>
+                    <tr>
+                        <th>Official Support Email</th>
+                        <td><a href="mailto:contact.dostified@gmail.com" style="color: var(--primary-rose); font-weight: bold;">contact.dostified@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>App Account System</th>
+                        <td>Supports Google Sign-In for seamless account identity and Google Drive authorization. Account emails can be masked on screen for privacy.</td>
+                    </tr>
+                    <tr>
+                        <th>Google Drive Scope Requested</th>
+                        <td><code>https://www.googleapis.com/auth/drive.appdata</code> (or <code>drive.file</code> restricted scope for backing up encrypted app data)</td>
+                    </tr>
+                    <tr>
+                        <th>Target Operating System</th>
+                        <td>Android 8.0+ (API 26 to API 35/37)</td>
+                    </tr>
+                    <tr>
+                        <th>Google Play Download URL</th>
+                        <td><a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.mukesh.mssister</a></td>
+                    </tr>
+                </table>
+
+                <!-- Developed by Mukesh Interactive Banner -->
+                <div class="dev-banner-btn" onclick="openSocialModal()">
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <img src="assets/dostified_logo.png" alt="Mukesh Saw Logo" style="width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--primary-rose-light); object-fit: cover;">
+                        <div>
+                            <h4 style="font-size: 17px; margin-bottom: 2px;">Mukesh Saw</h4>
+                            <p style="font-size: 13px; opacity: 0.85;">Developed by Mukesh • Tap to view official social media</p>
+                        </div>
+                    </div>
+                    <span class="btn-primary" style="padding: 8px 18px; font-size: 13px;">🌐 Social Media</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscriptions Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Transparent Pricing</span>
+                <h2 class="section-title">Simple Protection Passes</h2>
+                <p class="section-description">Core cycle tracking and Google Drive sync remain free forever. Support our independent development with optional protection passes.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 style="color: var(--deep-plum);">Free Care</h3>
+                    <div class="price">₹0</div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Essential cycle tracking for everyone</p>
+                    <ul class="pricing-features">
+                        <li>AI Cycle & Period Prediction</li>
+                        <li>Daily Symptom & Pain Logs</li>
+                        <li>AES-256 On-Device Encryption</li>
+                        <li>Google Drive Encrypted Backup</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener" class="btn-secondary" style="width: 100%; justify-content: center;">Get Started Free</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <span class="popular-tag">Most Popular</span>
+                    <h3 style="color: var(--primary-rose-dark);">Monthly Protection Pass</h3>
+                    <div class="price">₹20 <span style="font-size: 16px; font-weight: normal;">/ mo</span></div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Ad-free & premium health reports</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Free Care</li>
+                        <li>100% Ad-Free Experience</li>
+                        <li>Unlimited Gynecologist PDF Exports</li>
+                        <li>Custom Stealth App Icons</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center;">Subscribe Monthly</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 style="color: var(--deep-plum);">Yearly Protection Pass</h3>
+                    <div class="price">₹120 <span style="font-size: 16px; font-weight: normal;">/ yr</span></div>
+                    <p style="color: var(--text-muted); font-size: 14px;">Best value for annual wellness</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Monthly Pass</li>
+                        <li>Save 50% compared to monthly</li>
+                        <li>Priority Customer Support</li>
+                        <li>All Future Premium Updates</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener" class="btn-secondary" style="width: 100%; justify-content: center;">Subscribe Yearly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                        <img src="assets/mssister1.png" alt="MS Sister Logo" class="brand-icon" style="width: 32px; height: 32px; border-radius: 8px;">
+                        <h3 style="margin-bottom: 0;">MS Sister</h3>
+                    </div>
+                    <p>
+                        Your trusted companion for menstrual health tracking, cycle prediction, gynecologist reports, and zero-knowledge Google Drive backup. Built with love and complete privacy.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">Features</a></li>
+                        <li><a href="#google-drive-sync">Google Drive Sync</a></li>
+                        <li><a href="#pricing">Pricing Passes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal & Security</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="google-drive-privacy.html">Google Drive Privacy Disclosure</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Download App</h4>
+                    <ul>
+                        <!-- Play Store link with package com.mukesh.mssister -->
+                        <li><a href="https://play.google.com/store/apps/details?id=com.mukesh.mssister" target="_blank" rel="noopener">Google Play Store</a></li>
+                        <li><span style="font-size: 13px;">Package: com.mukesh.mssister</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MS Sister (Mukesh). Developed by Mukesh • Contact: <a href="mailto:contact.dostified@gmail.com" style="color: var(--primary-rose-light);">contact.dostified@gmail.com</a></p>
+                <p style="margin-top: 6px;"><a href="javascript:void(0)" onclick="openSocialModal()" style="color: var(--primary-rose-light); text-decoration: underline; font-weight: bold;">🌐 Tap here to view Developer Social Media Dialog</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Developed by Mukesh — Official Social Media Modal Dialog -->
+    <div id="social-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <img src="assets/dostified_logo.png" alt="Mukesh Saw Logo" class="dev-profile-pic">
+                <div class="modal-title-group">
+                    <h3>Mukesh Saw</h3>
+                    <span class="dev-tagline">Developed by Mukesh</span>
+                </div>
+                <button class="modal-close" onclick="closeSocialModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="social-links-grid" style="grid-template-columns: 1fr;">
+                    <a href="https://whatsapp.com/channel/0029Va8zuwILCoX7PJQRD71K" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/whatsapp.png" alt="WhatsApp Channel" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>WhatsApp Channel</strong>
+                            <small>Official Updates</small>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/telegram.png" alt="Telegram Channel" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Telegram Channel</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/instagram.png" alt="Instagram Profile" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Instagram Profile</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/Dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/facebook.png" alt="Facebook Page" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Facebook Page</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+
+                    <a href="https://twitter.com/dostified" target="_blank" rel="noopener" class="social-btn">
+                        <img src="assets/twitter.png" alt="Twitter Profile" class="social-icon-img">
+                        <div class="social-info">
+                            <strong>Twitter Profile</strong>
+                            <small>@Dostified</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top: 16px;">
+                <button class="btn-primary" onclick="closeSocialModal()" style="width: 100%; justify-content: center;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Dialog Script -->
+    <script>
+        function openSocialModal() {
+            document.getElementById('social-modal').classList.add('active');
+        }
+        function closeSocialModal() {
+            document.getElementById('social-modal').classList.remove('active');
+        }
+        // Close modal when clicking outside
+        document.getElementById('social-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSocialModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
